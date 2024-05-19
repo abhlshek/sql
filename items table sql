@@ -1,0 +1,10 @@
+create table itemstable(itemno int primary key ,itemname varchar(100),price int)
+desc itemstable
+insert into itemstable values('100','milk','100')
+insert into itemstable values('101','bread','50')
+insert into itemstable values('102','coockies','150')
+insert into itemstable values('103','white bread','500')
+select * from itemstable
+update  itemstable set itemname='pen'where itemno='103'
+delete from itemstable where itemno='100' 
+drop itemstable
